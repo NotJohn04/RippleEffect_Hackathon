@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RippleEffect Wallet Extension</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      width: 360px;
+      height: 480px;
+      margin: 0;
+      padding: 24px;
+      font-family: 'Lato', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+      text-align: center;
+    }
+
+    .logo {
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .account-info {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .account-name {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .public-key {
+      font-size: 16px;
+      color: #888;
+    }
+
+    .balance {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .usd-balance {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .sol-balance {
+      font-size: 24px;
+      color: #888;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      width: 100%;
+    }
+
+    .button {
+      padding: 20px;
+      background-color: #1E1E1E;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .button-icon {
+      width: 64px;
+      height: 64px;
+    }
+
+    .button span {
+      display: block;
+      margin-top: 8px;
+      font-size: 16px;
+}
+
+
+    .activity {
+      margin-top: 24px;
+      width: 100%;
+    }
+
+    .activity h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .activity-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .activity-icon {
+      width: 44px;
+      height: 44px;
+      margin-right: 12px;
+    }
+
+    .activity-info {
+      flex-grow: 1;
+    }
+
+    .activity-name {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .activity-amount {
+      font-size: 16px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>RippleEffect</h1>
+      <img src="images/icon128.png" alt="RippleEffect Logo" class="logo">
+    </div>
+    <div class="account-info">
+      <h2 class="account-name">Account 1</h2>
+      <p class="public-key">4dt4i...io45</p>
+    </div>
+    <div class="balance">
+      <span class="usd-balance">USD20</span>
+      <span class="sol-balance">80 SOL</span>
+    </div>
+    <div class="button-container">
+      <button class="button">
+        <img src="images/send-icon.png" alt="Send Icon" class="button-icon">
+        <span>Send</span>
+      </button>
+      <button class="button">
+        <img src="images/Receive.png" alt="Receive Icon" class="button-icon">
+        <span>Receive</span>
+      </button>
+    </div>
+    <div class="activity">
+      <h3>Activity</h3>
+      <div class="activity-item">
+        <img src="images/transfer-icon.png" alt="Transfer Icon" class="activity-icon">
+        <div class="activity-info">
+          <p class="activity-name">David Johnson</p>
+          <p class="activity-amount">+$30</p>
+        </div>
+      </div>
+      <div class="activity-item">
+        <img src="images/token-icon.png" alt="Token Icon" class="activity-icon">
+        <div class="activity-info">
+          <p class="activity-name">Sam Tsao</p>
+          <p class="activity-amount">-$1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
